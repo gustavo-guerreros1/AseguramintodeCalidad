@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Recibos</title>
+    <link rel="stylesheet" href = "./css/tusRecibos.css">
+	<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+	<script src="pdf.js"></script>
+</head>
+<body>
+	<header class="header">
+        <figure class="icon">
+            <img src="./img/img0.png" alt="icon company"  >
+        </figure>
+        <nav class="menu-navigation">
+            <ul class="menu-links">
+                <a href="./menuprincipal.html"> <li  class="item-list">Home</li>  </a> 
+                <a href="./reservaA.html"><li class="item-list">Areas Reservadas</li> </a> 
+                <a href="./vecinos.html"><li class="item-list">Vecinos</li> </a> 
+                <a href="./login.html"><li class="item-list">salir</li> </a> 
+            </ul>
+        </nav>
+    </header>
+     
+
+    <div class="contenidoTusRecibos">
+        <h1 class="tituloTusRecibos">Página de Tus Recibos</h1>
+		<button onclick=" generarPDF()">Descargar en PDF</button>
+
+		<div id="recibos">
+			<div class="invoice-box">
+				<table cellpadding="0" cellspacing="0">
+					<tr class="top">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td class="title">
+										<img src="iconosMenu/logoDominio180.svg" style="width: 100%; max-width: 300px" />
+									</td>
+
+									<td>
+										<br>Fecha: 30/07/2021<br/>
+										<br>Cliente: Nombre De Usuario<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="information">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td>
+										Lima. Perú.<br/>
+										Av. Señor de los Milagros 1792<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Método de Pago</td>
+					</tr>
+
+					<tr class="details">
+						<td>Pago en Efectivo</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Especificaciones</td>
+						<td>Monto (S/.)</td>
+					</tr>
+
+					<tr class="item">
+						<td>Mantenimiento Ascensor</td>
+						<td>250.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pintura Fachada Edificio</td>
+						<td>55.00</td>
+					</tr>
+					<!--
+					<tr class="item last">
+						<td>Domain name (1 year)</td>
+						<td>$10.00</td>-->
+					</tr>
+
+					<tr class="total">
+						<td></td>
+
+						<td>Total (S/.): 305.00</td>
+					</tr>
+				</table>
+			</div> 
+			<br>
+			<div class="invoice-box">
+				<table cellpadding="0" cellspacing="0">
+					<tr class="top">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td class="title">
+										<img src="iconosMenu/logoDominio180.svg" style="width: 100%; max-width: 300px" />
+									</td>
+
+									<td>
+										<br>Fecha: 30/08/2021<br/>
+										<br>Cliente: Nombre De Usuario<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="information">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td>
+										Lima. Perú.<br/>
+										Av. Señor de los Milagros 1792<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Método de Pago</td>
+					</tr>
+
+					<tr class="details">
+						<td>Pago en Efectivo</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Especificaciones</td>
+						<td>Monto (S/.)</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pago por mantenimiento de áreas verdes</td>
+						<td>320.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Reparación Botón de Cerrado Rápido del Ascensor</td>
+						<td>10.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pago Gasto Luz Áreas Comunes</td>
+						<td>220.00</td>
+					</tr>
+					<!--
+					<tr class="item last">
+						<td>Domain name (1 year)</td>
+						<td>$10.00</td>-->
+					</tr>
+
+					<tr class="total">
+						<td></td>
+
+						<td>Total (S/.): 550.00</td>
+					</tr>
+				</table>
+			</div> 
+		</div>
+		<br>
+    </div>
+</body>
+</html>
