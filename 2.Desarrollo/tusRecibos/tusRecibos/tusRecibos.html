@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tus Recibos</title>
+    <link rel="stylesheet" href = "tusRecibos.css">
+	<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+	<script src="pdf.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list">
+            <div class="logo">
+                <img src = "iconosMenu/logoDominio180.svg">
+            </div>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/departamentos.svg"  width = "24" height = "24" class="list__img">
+                    <a href="#" class="nav__link">Departamentos</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="tusVecinos.html" class="nav__link nav__link--inside">Tus vecinos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="sobreTuDepartamento.html" class="nav__link nav__link--inside">Sobre tu departamento</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/reporteGastosComprobantes.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Reporte de Gastos/Recibos</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="verReporteGastos.html" class="nav__link nav__link--inside">Ver Reporte de Gastos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="tusRecibos.html" class="nav__link nav__link--inside">Tus Recibos</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/areasComunes.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Áreas Comunes</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="verAreasComunes.html" class="nav__link nav__link--inside">Ver las áreas comunes</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="reservarAreaComun.html" class="nav__link nav__link--inside">Reservar área común</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/reporteIngresoEgreso.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Ingreso/Egreso</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="mostrarIngresos.html" class="nav__link nav__link--inside">Mostrar Ingresos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="mostrarEgresos.html" class="nav__link nav__link--inside">Mostrar Egresos</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/lapiz.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Blog de Noticias</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="iniciarRedaccion.html" class="nav__link nav__link--inside">Iniciar Redacción</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <script src="main.js"></script>
+
+    <div class="contenidoTusRecibos">
+        <h1 class="tituloTusRecibos">Página de Tus Recibos</h1>
+		<button onclick=" generarPDF()">Descargar en PDF</button>
+
+		<div id="recibos">
+			<div class="invoice-box">
+				<table cellpadding="0" cellspacing="0">
+					<tr class="top">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td class="title">
+										<img src="iconosMenu/logoDominio180.svg" style="width: 100%; max-width: 300px" />
+									</td>
+
+									<td>
+										<br>Fecha: 30/07/2021<br/>
+										<br>Cliente: Nombre De Usuario<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="information">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td>
+										Lima. Perú.<br/>
+										Av. Señor de los Milagros 1792<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Método de Pago</td>
+					</tr>
+
+					<tr class="details">
+						<td>Pago en Efectivo</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Especificaciones</td>
+						<td>Monto (S/.)</td>
+					</tr>
+
+					<tr class="item">
+						<td>Mantenimiento Ascensor</td>
+						<td>250.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pintura Fachada Edificio</td>
+						<td>55.00</td>
+					</tr>
+					<!--
+					<tr class="item last">
+						<td>Domain name (1 year)</td>
+						<td>$10.00</td>-->
+					</tr>
+
+					<tr class="total">
+						<td></td>
+
+						<td>Total (S/.): 305.00</td>
+					</tr>
+				</table>
+			</div> 
+			<br>
+			<div class="invoice-box">
+				<table cellpadding="0" cellspacing="0">
+					<tr class="top">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td class="title">
+										<img src="iconosMenu/logoDominio180.svg" style="width: 100%; max-width: 300px" />
+									</td>
+
+									<td>
+										<br>Fecha: 30/08/2021<br/>
+										<br>Cliente: Nombre De Usuario<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="information">
+						<td colspan="2">
+							<table>
+								<tr>
+									<td>
+										Lima. Perú.<br/>
+										Av. Señor de los Milagros 1792<br/>
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Método de Pago</td>
+					</tr>
+
+					<tr class="details">
+						<td>Pago en Efectivo</td>
+					</tr>
+
+					<tr class="heading">
+						<td>Especificaciones</td>
+						<td>Monto (S/.)</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pago por mantenimiento de áreas verdes</td>
+						<td>320.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Reparación Botón de Cerrado Rápido del Ascensor</td>
+						<td>10.00</td>
+					</tr>
+
+					<tr class="item">
+						<td>Pago Gasto Luz Áreas Comunes</td>
+						<td>220.00</td>
+					</tr>
+					<!--
+					<tr class="item last">
+						<td>Domain name (1 year)</td>
+						<td>$10.00</td>-->
+					</tr>
+
+					<tr class="total">
+						<td></td>
+
+						<td>Total (S/.): 550.00</td>
+					</tr>
+				</table>
+			</div> 
+		</div>
+		<br>
+    </div>
+</body>
+</html>
