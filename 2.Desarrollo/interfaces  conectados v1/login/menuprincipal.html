@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú despegable</title>
+    <link rel="stylesheet" href="stylesMenu.css">
+</head>
+<body>
+    <nav class="nav">
+        <ul class="list">
+            <div class="logo">
+                <img src = "iconosMenu/logoDominio180.svg">
+            </div>
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/departamentos.svg"  width = "24" height = "24" class="list__img">
+                    <a href="#" class="nav__link">Departamentos</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Tus vecinos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="./datosdpto.html" class="nav__link nav__link--inside">Sobre tu departamento</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/reporteGastosComprobantes.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Reporte de Gastos/Recibos</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Ver Reporte de Gastos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Tus Recibos</a>
+                    </li>
+                </ul>
+            </li>
+            
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/areasComunes.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Áreas Comunes</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="./areacomun.html" class="nav__link nav__link--inside">Ver las áreas comunes</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Reservar área común</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/reporteIngresoEgreso.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Ingreso/Egreso</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Mostrar Ingresos</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Mostrar Egresos</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="iconosMenu/lapiz.svg"  width = "24px" height = "24px" class="list__img">
+                    <a href="#" class="nav__link">Blog de Noticias</a>
+                    <img src="iconosMenu/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Iniciar Redacción</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <script src="main.js"></script>
+</body>
+</html>
