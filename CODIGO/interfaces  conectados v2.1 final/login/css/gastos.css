@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+ 
+
+.header {
+  width: 100vw;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  
+  background: #f5b73b;
+}
+
+.icon img {
+  position: absolute;
+  display: inline;
+  width: 90px;
+  
+}
+
+.menu-links {
+  margin-top: 3rem;
+  margin-left: 50rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+   
+  
+}
+.menu-links a{
+  text-decoration: none;
+}
+
+.menu-navigation {
+  margin-bottom: 20px;
+}
+
+.item-list {
+  margin: 0 4px;
+  padding: 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-family: 'Lora', serif;
+}
+
+ 
+
+.a{
+    display: flex ;
+    position: relative;
+    font-size: 2rem;
+    width: 100%;
+    height: 40vh;
+    background-color: rgb(255, 255, 255);
+    padding: 4rem; 
+}
+ 
+/*calendario*/
+.title {
+    text-align: center;
+    color: #444; }
+ 
+  .calendar {
+    position: absolute;
+    display: inline-block;
+    background: #4ECDC4;
+    width: 80%;
+    max-width: 600px;
+    margin-left: 75rem;
+    margin-top: -23rem;
+  
+    
+    }
+    .calendar__info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 2em;
+      font-size: 1.7em;
+      text-transform: uppercase; }
+    .calendar__prev, .calendar__next {
+      color: #C7F464;
+      cursor: pointer;
+      font-size: 1.6em; }
+    .calendar__prev {
+      margin-right: auto; }
+    .calendar__next {
+      margin-left: auto; }
+    .calendar__week, .calendar__dates {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 10px; }
+    .calendar__month, .calendar__year {
+      padding: .5em 1em; }
+    .calendar__item {
+      text-align: center;
+      line-height: 2; }
+    .calendar__today {
+      background: lightcoral;
+      color: white;
+      width: 50%;
+      border-radius: 50%;
+      margin: auto; }
+    .calendar__last-days {
+      opacity: .3; }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.periodo{
+    display: inline-block; 
+    width: 13%;
+    padding-bottom: 6rem;
+}
+
+.a1{
+    color: black;
+    position: absolute;
+     
+    margin-top: 6rem;
+}
+.comentario{
+    position: absolute;
+    margin-top: 12rem; 
+}
+.comentario h2{
+    margin-top: 1rem;
+}
+#com{
+    border-color: rgb(0, 0, 0);
+    border-radius: 1.5rem;
+    height: 5rem;   
+    width: 30rem; 
+}
+#enviar{
+  border-color: rgb(0, 0, 0);
+  border-radius: 1.5rem;
+  height: 4rem;  
+  width: 12rem; 
+  margin-top: 17rem;
+   
+}
+
+
+
+.b{
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    width: 100%;
+    height: 60vh;
+    padding: 5rem; 
+    display: inline-block;
+    position: absolute;
+   
+}
+.tabla1{
+    margin-top: 3rem;
+    width: 50vw;
+} 
+
+.tabla1 tr{
+    background-color: rgb(252, 246, 246);
+    width: 60vw;
+    border-color: black 6rem;
+}
+.tabla2{
+    margin-top: 3rem;
+    width: 50vw;
+} 
+
+.tabla2 tr{
+    background-color: rgb(252, 246, 246);
+    width: 60vw;
+    border-color: black 6rem;
+}

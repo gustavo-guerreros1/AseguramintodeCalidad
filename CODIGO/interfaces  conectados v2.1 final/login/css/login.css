@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/condo.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.login-box {
+    width: 320px;
+    height: 380px;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    border-radius: 1rem;
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.login-box h3 {
+    margin: 0;
+    padding: 0 0 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.a {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+
+.login-box p {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+.login-box a:hover {
+    color: white;
+}
+.formulario{
+    margin: auto;
+    border-style: none;
+   
+    
+}
+
+.formulario .input{
+    padding: .7rem;
+    font-size: 1rem;
+    border-width: .1rem;
+    border-radius: .6rem;
+    border-color: darkgray;
+    display: block;
+}
+
+.boton-entrar{
+    background-color: dodgerblue;
+    padding: .4rem;
+    border-radius: 0.6rem;
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    transition: background-color 0.2s ease;
+}
+
+.boton-entrar:hover{
+    background-color: cadetblue;
+}
+
+.error{
+    background-color:red;
+    color: white;
+    text-transform: uppercase;
+    padding: .3rem;
+    text-align: center;
+    border-radius:1rem
+}
+.ocultar{
+    visibility:hidden;
+}

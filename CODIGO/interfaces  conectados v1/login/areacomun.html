@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Comun</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section class="a">
+            <div class="periodo">
+                <h2>PERIODO:</h2> 
+               
+                 
+            </div> 
+            <div>
+                <input type="search" id="buscador" placeholder="buscar"> 
+            </div>
+            <div class="a1">
+                <p>Mes - Año</p>
+                <input type="month" id="periodo" placeholder="mes">
+            </div>
+            <div class="comentario">
+                <h2>COMENTARIO:</h2> 
+                <input type="text" id="com">
+            </div> 
+
+            <div class="calendar">
+                <div class="calendar__info">
+                    <div class="calendar__prev" id="pre-month">&#9664</div>
+                    <div class="calendar__month" id="month">junio</div>
+                    <div class="calendar__year" id="year">2018</div>
+                    <div class="calendar__next" id="next-month">&#9654</div>
+                </div>
+                <div class="calendar__weeb">
+                    <div class="calendar__day_calendar__item">lunes</div>
+                    <div class="calendar__day_calendar__item">martes</div>
+                    <div class="calendar__day_calendar__item">miercoles</div>
+                    <div class="calendar__day_calendar__item">jueves</div>
+                    <div class="calendar__day_calendar__item">viernes</div>
+                    <div class="calendar__day_calendar__item">sabado</div>
+                    <div class="calendar__day_calendar__item">domingo</div>
+    
+                </div>
+    
+                <div class="calendar__datex" id="dates"></div>
+    
+            </div>
+                 
+        </section>
+        <section class="b">
+            <h1>GASTO COMUN DEL PERIODO</h1>
+            <table class="tabla1">
+                <tr >
+                    <th>Gstos Administrativos</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                </tr>
+                <tr>
+                    <td>Salario personal de limpieza</td>
+                    <td><input type="text"></td>
+                    <td> <input type="text" placeholder="S/xxxx"></td>
+                </tr>
+                <tr>
+                    <td>Salario personal de seguridad</td>
+                    <td><input type="text"></td>
+                    <td> <input type="text" placeholder="S/xxxx"></td>
+                </tr>
+            </table>
+            <table class="tabla2">
+                <tr >
+                    <th>Gastos de mantenimiento y reparacion</th>
+                    <th>Descripción</th>
+                    <th>Monto</th>
+                </tr>
+                <tr>
+                    <td>Pintado de la fachada de las torres de condiminio</td>
+                    <td><input type="text"></td>
+                    <td> <input type="text" placeholder="S/xxxxx"></td>
+                </tr>
+                <tr>
+                    <td>Mantenimiento de ascensores</td>
+                    <td><input type="text"></td>
+                    <td> <input type="text" placeholder="S/xxxx"></td>
+                </tr>
+            </table>
+
+
+
+        </section>
+         
+        <section>
+            
+        </section>
+    </main>
+<script src="calendar.js"></script>
+</body>
+</html>

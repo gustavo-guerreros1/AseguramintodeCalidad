@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.header {
+  width: 100vw;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  
+  background: #f5b73b;
+}
+
+.icon img {
+  position: absolute;
+  display: inline;
+  width: 90px;
+  
+}
+
+.menu-links {
+  margin-top: 3rem;
+  margin-left: 50rem;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+   
+  
+}
+.menu-links a{
+  text-decoration: none;
+}
+
+.menu-navigation {
+  margin-bottom: 20px;
+}
+
+.item-list {
+  margin: 0 4px;
+  padding: 4px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-family: 'Lora', serif;
+}
+
+
+
+
+
+.contenedor{
+    height: 100vh;
+    background-color: rgb(255, 248, 220);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 2rem;
+}
+.imagen{
+    height: auto;
+    background-image: url('../img/condo.jpg');
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.informacion{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.informacion{
+    background-color: burlywood;
+    border-radius: 1rem;
+}
+.info{
+    text-align: center;
+}
+.navegacion{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: .1rem;
+}
+
+.navegacion button{
+    border-style: none;
+    background-color: darkolivegreen;
+    padding: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.lista{
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 6rem;
+    width: 50rem;
+    height: 30rem;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 2rem;
+}
+.divServicios{
+    background-color:dodgerblue ;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.divServicios p{
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.selector{
+    background-color: goldenrod;
+}
+.divServicios:hover{
+    cursor: pointer;
+}
+
+.titulo-seccion{
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 7rem;
+    margin-bottom: 10rem;
+}
+
+.seccion{
+    display: none;
+}
+
+.mostrar-seccion{
+    display: block;
+}
+
+.pintar{
+    background-color: rgb(88, 96, 160);
+}
+
+.formulario{
+    width: 90%;
+    margin: 0 auto;
+}
+.campo{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.formulario input{
+    flex: 1 ;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+.formulario label{
+    flex: 0 0 10rem;
+    font-size: 2rem;
+}
+.error{
+    margin: 2rem auto 0 auto;
+    background-color: red;
+    color: white;
+    width: 20rem;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;  
+}
+
+.tercero{
+    margin: 2rem auto 0 auto;
+}
+.tercero .titulo{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.tercero span{
+    font-weight: bold;
+}
+.tercero p,h3{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}

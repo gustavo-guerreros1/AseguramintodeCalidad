@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reservarAreas.css">
+</head>
+
+<body>
+    <header class="header">
+        <figure class="icon">
+            <img src="./img/img0.png" alt="icon company"  >
+        </figure>
+        <nav class="menu-navigation">
+            <ul class="menu-links">
+                <a href="./menuprincipal.html"> <li  class="item-list">Home</li>  </a> 
+                <a href="./reservaA.html"><li class="item-list">Reserva Area</li> </a> 
+                <a href="./vecinos.html"><li class="item-list">Vecinos</li> </a> 
+                <a href="./login.html"><li class="item-list">salir</li> </a> 
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="contenedor">
+        <div class="imagen">
+            
+        </div>
+
+        <div class="informacion">
+            <h1 class="titulo">Areas Comunes</h1>
+            <p class="info">Espacios que necesitan de reserva para su uso</p>
+        
+            <div class="navegacion tab">
+                <button type="button" data-paso='1' class="inicio">Inicio</button>
+                <button type="button" data-paso='2' class="inicio">Informacion propietario</button>
+                <button type="button" data-paso='3' class="resumen">Resumen</button>
+            </div>
+
+            <div id='paso-1' class="primero seccion">
+                <h1 class="titulo-seccion">Lista de Servicios</h1>
+
+                <div class="lista">
+
+                </div>
+                <!--Aqui va los items a seleccionar sobre las areas comunes-->
+
+
+            </div>
+            <div id='paso-2' class="segundo seccion">
+                <h1 class="titulo-seccion">Reservar Area</h1>
+                <form class="formulario">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="fecha">Fecha</label>
+                        <input id="fecha" type="date" placeholder="dd/mm//a">
+                    </div>
+                    <div class="campo">
+                        <label for="hora">Hora</label>
+                        <input id="hora" type="time" placeholder="--:--">
+                    </div>
+
+                </form>
+
+
+            </div>
+            <div id='paso-3' class="tercero seccion">
+                <h1 class="titulo-seccion">Servicios a considerar</h1>
+                
+
+
+            </div>
+        
+        
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
